@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+}
+
+.nav1 {
+    height: 70px;
+    width: 100%;
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4vw;
+
+
+}
+
+.nav-part1 {
+    display: flex;
+
+}
+
+.gola {
+    height: 20px;
+    width: 20px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.nav-part2 {
+    display: flex;
+    gap: 2vw;
+
+}
+
+.nav-part2 h5 {
+    font-weight: 500;
+    font-size: 1.2vw;
+}
+
+span {
+    font-weight: 300;
+}
+
+.nav2 {
+    height: 70px;
+    width: 100%;
+    /* background-color: yellowgreen; */
+    display: flex;
+    align-items: center;
+    padding: 0 4vw;
+    gap: 3vw;
+
+}
+
+.nav2 h5 {
+    font-size: 1.2vw;
+    font-weight: 450;
+    text-transform: uppercase;
+}
+
+.content {
+    height: calc(100% - 140px);
+    width: 100%;
+    /* background-color: blanchedalmond; */
+}
+
+.text-content {
+    height: 40%;
+    width: 100%;
+    /* background-color: burlywood; */
+    display: flex;
+    overflow-x: auto;
+
+}
+
+.text-content::-webkit-scrollbar {
+    background-color: transparent;
+    height: 5px;
+}
+
+.text-content::-webkit-scrollbar-thumb {
+    background-color: orangered;
+}
+
+
+.elem {
+    flex-shrink: 0;
+    height: 100%;
+    width: 60%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.elem h1 {
+    font-size: 5vw;
+    font-weight: 350;
+}
+
+.img-content {
+    height: 60%;
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+}
+
+.img-content::-webkit-scrollbar{
+    display: none;
+}
+
+
+.img-content img {
+    flex-shrink: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+@media (max-width:600px) {
+   .nav1 h5 {
+    display: none;
+   }
+   .gola{
+    height: 40px;
+    width: 40px;
+   }
+   .nav2{
+overflow-x: auto;
+   }
+.nav2::-webkit-scrollbar{
+    display: none;
+}
+
+.elem{
+    width: 80%;
+    height: 100%;
+}
+.elem h1 {
+    font-size: 8vh;
+    white-space: nowrap;
+    margin-left: 5vh;
+}
+
+
+   .nav2 h5 {
+    font-size: 2vh;
+    font-weight: 600;
+   }
+}
